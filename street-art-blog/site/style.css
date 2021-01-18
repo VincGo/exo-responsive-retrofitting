@@ -1,0 +1,308 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body{
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header h1, header h2, nav a{
+    color: white;
+}
+
+h1{
+    font-size: 56px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+#second-section, #third-section{
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+/* HEADER - NAV BAR */
+
+header{
+    background: url("../sources/images/banner.jpg") no-repeat;
+    background-size: 100% 530px;
+    height: 680px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img{
+    margin-left: 20px;
+}
+
+ul{
+    display: flex;
+    height: 35px;
+}
+
+li{
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin: 0 35px
+}
+
+nav a:hover{
+    border-bottom: 2px white solid;
+}
+
+header > div{
+    text-align: center;
+    margin-top: 8rem;
+}
+
+/* MAIN */
+main{
+    width: 960px;
+    margin: auto;
+}
+
+main h3, p{
+    color: #777777;
+
+}
+/* FIRST SECTION */
+#first-section{
+    margin-top: -150PX;
+}
+
+#first-section > div{
+    background-color: #ffffff94;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+}
+
+#first-section h3{
+    font-size: 30px;
+    text-align: center;
+    width: 75%;
+    align-self: center;
+    line-height: 4rem;
+    border-left: 5px solid #777;
+    padding: 50px;
+}
+
+#first-section img{
+    width: 100%;
+}
+
+/* SECOND SECTION */
+#second-section{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: center;
+}
+
+#second-section > div{
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    padding: 40px;
+}
+
+#second-section i{
+    color: #2e7a9b;
+}
+
+/* THIRD SECTION */
+#third-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+#third-section > div{
+    width: 48%;
+}
+
+#third-section img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card{
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    margin-top: -3px;
+    border-radius: 0 0 10px 10px;
+}
+
+.card h3{
+    font-size: 28px;
+}
+
+.card p{
+    margin-bottom: 45px;
+}
+
+.card a{
+    text-decoration: none;
+    color: #777777;
+    border: 2px solid #7777;
+    padding: 10px 15px;
+    border-radius: 7px;
+}
+
+/* SIGN UP */
+#sign-up{
+    background-color: #bb2964;
+    margin-top: 100px;
+}
+
+#sign-up h2, #sign-up p{
+    color: white;
+}
+
+#sign-up p{
+    margin: 40px 0 50px 0;
+}
+
+#sign-up{
+    display: flex;
+    justify-content: center;
+}
+
+#sign-up > div{
+    text-align: center;
+    padding: 55px;
+}
+
+#sign-up a{
+    text-decoration: none;
+    padding: 15px 25px;
+    background-color: white;
+    color: #bb2964;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+input{
+    background: #c5497b;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    padding: 17px 15px;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: center;
+    color: #c6c6c6;
+}
+
+footer > div{
+    margin: 60px 0 100px 0;
+}
+
+footer div > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p{
+    font-size: 12px;
+}
+
+@media screen and (max-width: 950px){
+    header{
+        height: 460px;
+        background-size: 100% 309px;
+    }
+    header > div{
+        margin: 0;
+    }
+    header h1{
+        font-size: 32px;
+    }
+    header h2{
+        font-size: 18px;
+    }
+
+    nav img{
+        width: 25%;
+    }
+
+    nav a {
+        margin:  0 10px;
+    }
+
+    main{
+        width: 96%;
+    }
+
+    #second-section, #third-section{
+        margin-top: 20px;
+    }
+
+    #second-section > div{
+        width: 80%;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    #second-section > div:last-child{
+        border-bottom: 0;
+    }
+
+    #third-section{
+        display: block;
+    }
+
+    #third-section > div{
+        width: 100%;
+    }
+
+    #third-section >div:first-child{
+        margin-bottom: 30px;
+    }
+
+    #sign-up{
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    header{
+        height: 450px;
+        background-size: 100% 290px;
+    }
+    header > div{
+        margin-top: 0;
+    }
+    header h1{
+        font-size: 35px;
+    }
+    header h2{
+        font-size: 20px;
+    }
+    nav{
+        display: block;
+    }
+    nav img{
+        width: 30%;
+    }
+    nav a{
+        font-size: 25px;
+    }
+    nav ul{
+        justify-content: center;
+    }
+}
